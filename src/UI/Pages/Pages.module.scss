@@ -1,0 +1,25 @@
+@use "../../styles/mixins";
+@use "../../styles/variables";
+
+.container{
+  margin-block: 15px;
+  @include mixins.baseFlex(center);
+  gap: 10px;
+}
+
+.pageNumber{
+  @include mixins.storeInteractive;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: white;
+
+  &:hover{
+    cursor: pointer
+  }
+
+  &_current{
+    background-color: white;
+    color: black;
+  }
+}

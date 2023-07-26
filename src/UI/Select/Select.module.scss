@@ -1,0 +1,34 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  @include mixins.storeInteractive;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+  no-repeat right 0.8em center / 1.4em;
+  color: white;
+  border-radius: 0.25em;
+  cursor: pointer;
+  /* <option> colors */
+  option {
+    color: inherit;
+    background-color: variables.$option;
+  }
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+}

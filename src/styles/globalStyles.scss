@@ -1,0 +1,6 @@
+@use "variables";
+@import "normalize";
+
+body{
+  background: no-repeat variables.$mainGradient;
+}

@@ -1,0 +1,21 @@
+@use "../../../styles/mixins";
+
+.card{
+  min-height: 60vh;
+}
+
+.image{
+  margin: auto;
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.cardInfo{
+  @include mixins.baseFlex(normal);
+  flex-direction: column;
+}
+
+.description{
+  margin-top: auto;
+}

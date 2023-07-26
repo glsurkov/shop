@@ -1,0 +1,13 @@
+@use '../../../styles/mixins.scss';
+
+.container{
+  @include mixins.baseFlex(start);
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card{
+  flex-basis: calc(25% - 15px);
+  @include mixins.baseFlex(center)
+}

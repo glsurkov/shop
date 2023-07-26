@@ -1,0 +1,11 @@
+@use "variables";
+
+@mixin baseFlex($justify){
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin storeInteractive{
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left, variables.$glass-icon 3em, variables.$glass 3em);
+}

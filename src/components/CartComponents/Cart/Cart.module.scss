@@ -1,0 +1,11 @@
+@use "../../../styles/mixins";
+
+.container{
+  @include mixins.baseFlex(flex-start);
+  flex-wrap: wrap;
+}
+
+.cartNotification{
+  margin: auto;
+  color: white;
+}

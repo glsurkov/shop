@@ -1,0 +1,35 @@
+@use "../../styles/mixins";
+
+.container{
+  @include mixins.baseFlex(center);
+  height: calc(100vh - 72px);
+  align-items: center;
+  flex-direction: column;
+  gap: 10px
+}
+
+.logoContainer{
+  height: 30%;
+}
+
+.logo{
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+.link{
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  user-select: none;
+
+  &:hover{
+    transform: scale(1.1,1.1);
+    color: white;
+  }
+}
+
+.login{
+  margin-block-end: 20px;
+}
